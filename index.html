@@ -3,32 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <title>Angelina Kong</title>
+<link rel="icon" type="image/png" href="logo.png"/>
 	<link href="home.css" type="text/css" rel="stylesheet"/>
 	<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 <body>
 	<div class="header"> 
-		<span class ="logo" style="color:#3E3065ff"> Angelina Kong </span>
+		<span class ="logo" style="color:#3E3065ff" > 
+			<img src="logo.png" alt="logo" width = 1.5%>
+			Angelina Kong 
+			<a href="https://github.com/angelina-kong"><iconify-icon icon="mdi:github"></iconify-icon></a> 
+			<a href="https://devpost.com/angelinakong905?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"><iconify-icon icon="simple-icons:devpost"></iconify-icon></a>  
+			<a href="https://www.linkedin.com/in/angelina-kong-821080244/"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+		</span>
 		<div class="header-right">
-			<a href="#Home">Home</a>
-			<a href="#Projects">Projects</a>
-			<a href="#About">About</a>
-			<a href="#Contact">Contact</a>
+			<a href="#home">Home</a>
+			<a href="#projects">Projects</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+			
 		</div>
 	</div> 
 	
-	<div class = "frontpage">
+	<div class = "frontpage" id="home">
 		<h1> Hi, I'm Angelina!</h1>
 		<p> I'm a university student studying computer engineering </p>
 		<p>and welcome to a showcase of my projects and works! </p>
 		<p>All my side-projects in one easy to navigate place. </p>
 		<p>Feel free to explore around! </p>
-		
-		<button class="button button1">Download my Resume</button>
-		<button class="button about">About Me</button>
+		<a href="AngelinaKongResume.pdf" download="Resume">
+			<button class = "button" type="button">Download my Resume</button>
 	</div>
 	
-	<div class="projects">
+	<div class="projects"id="projects">
 		<h2> My Projects </h2>
 		<div class="row">
 			<div class="column">
@@ -47,7 +55,7 @@
 				<a href="https://yrhacks-2023.devpost.com/">
 					<div class="card">
 						<div class="project-image">
-							<img src="Breakbread.jpg" alt="Breakingbread" style="width:100%")>
+							<img src="Breakbread.jpg" alt="Breakingbread" style="width:100%">
 						</div>
 						<div class="container">
 							<p>Breaking Bread - Best UI/UX winner of YRhacks 2023</p>
@@ -58,11 +66,44 @@
 		</div>
 	</div>
 
-	<div class="contact">
+	<div class="about"id="about">
+		<div class="row">
+			<div class="column">
+				<div class="card">
+					<img src="profile.jpg" alt="profile" style="width:100%">
+					<h1>Angelina Kong</h1>
+					<p>Computer Engineering at University of Waterloo</p>
+					<div class= "icon">
+						<a href="https://github.com/angelina-kong"><iconify-icon icon="mdi:github"></iconify-icon></a> 
+						<a href="https://devpost.com/angelinakong905?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"><iconify-icon icon="simple-icons:devpost"></iconify-icon></a>  
+						<a href="https://www.linkedin.com/in/angelina-kong-821080244/"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+					  </div>
+				</div>
+			</div>
+			<div class="box">
+				<h2>About Me</h2>
+				<p>
+					Hello there! I'm Angelina, and I'm currently in the process of honing my skills in computer engineering at University of Waterloo, where I'm expected to graduate in 2028. My academic journey has been an exciting blend of theory and hands-on experiences, equipping me with a solid foundation in programming, hardware design, and cutting-edge technologies.
+				</p>
+				<p>
+					I thrive in the world of projects, where I've been fortunate to work on an array of exciting endeavors. From developing intuitive mobile apps to crafting efficient algorithms, each project has taught me invaluable lessons and ignited my passion even more. You'll find a curated selection of my projects on this website, each with a unique and innovative concept.
+				</p>
+				<p>
+					I'm thrilled by the rapid evolution of technology and the endless possibilities it holds. Join me on this exciting journey as I continue to learn, innovate, and contribute to the ever-changing landscape of computer engineering.
+				</p>
+				<p>
+					Feel free to get in touch with me via email at angelinakong905@gmail.com or view my works on Github, Devpost or Linkedin.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="contact"id="contact">
 		<div class="form-box">
 			<h2> Contact Me</h2>
 			<p>Have a question? Send an email using this form and I will get back to you as soon as possible!</p>
-			<form action="contact.php">
+			<form class="form-class" method="post" action="contact.php"></form>
 				<div class="form">
 					<label for="name"> Name </label>
 					<div class="form-input">
@@ -86,7 +127,7 @@
 	   				<div class="form-input">
 						<textarea id="message" class="form-control" rows="6" maxlength="3000" required ></textarea>
 					<div>
-	 			<button class ="button submit" type ="button"> Send Message</button>
+				<input class = "button" type="submit" value="Send"/>
 			</form>
 		</div>
 	</div>
