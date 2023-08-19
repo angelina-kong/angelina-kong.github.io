@@ -7,6 +7,7 @@
 	<link href="home.css" type="text/css" rel="stylesheet"/>
 	<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
 	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
 	<div class="header"> 
@@ -126,19 +127,19 @@
 			</form>
 		</div>
 	</div>
-	<script> scr="https://smtpjs.com/v3/smtp.js" </script>
+	
 	<script>
 		function sendEmail(){
 			Email.send({
-				Host : "smtp.gmail.com",
+				Host : "smtp.elasticemail.com",
 				Username : "anglestar905@gmail.com",
 				Password : "967150C966DCE0C50D6290B4521F5D429205",
-				To : 'angelstar905@gmail.com',
+				To : 'anglestar905@gmail.com',
 				From : document.getElementById("email").value,
 				Subject : "website",
 				Body : document.getElementById("message").value
 			}).then(
-			message => alert("email sent")
+			message => alert("Email sent successfully")
 			);
 		}
 	</script>
