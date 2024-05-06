@@ -108,40 +108,24 @@
 				<div class="form">
 					<label for="name"> Name </label>
 					<div class="form-input">
-						<input type="text"id="name"class="form-control"required/>
+						<input type="name"name="name"/>
 					</div>
 				</div>
 				<div class="form">
 					<label for="email">Email </label>
 					<div class="form-input">
-						<input type="text"id="email"class="form-control"required/>
+						<input type="email" name="email"/>
 					</div>
 				</div>
 				<div class="form">
 	   				<label for="message">Message</label>
 	   				<div class="form-input">
-						<textarea id="message" class="form-control" rows="6" maxlength="3000" required ></textarea>
+						<textarea type="message" name ="message" class="form-control" rows="6" maxlength="3000" required ></textarea>
 					<div>
 				</div>
 					<button type="submit" class="button">Send</button>
 			</form>
 		</div>
 	</div>
-	
-	<!-- <script>
-		function sendEmail(){
-			Email.send({
-				Host : "smtp.elasticemail.com",
-				Username : "anglestar905@gmail.com",
-				Password : "967150C966DCE0C50D6290B4521F5D429205",
-				To : 'anglestar905@gmail.com',
-				From : document.getElementById("email").value,
-				Subject : "website",
-				Body : document.getElementById("message").value
-			}).then(
-			message => alert("Email sent successfully")
-			);
-		}
-	</script> -->
 </body>
 </html>
